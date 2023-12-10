@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+a,
+button,
+label,
+select,
+option,
+form,
+textarea,
+b,
+li,
+ul,
+input,
+div
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(../assets/fonts/nokiafc22.ttf);
+}
+
+.pixel-font {
+    font-family: Pixel;
+    font-size: 6vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.intro {
+    position: relative;
+    max-height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4% 4% 4%;
+}
+
+.intro .intro-margin {
+    margin-top: 4%;
+}
+
+.intro .intro-content {
+    width: 60%;
+}
+
+.intro .intro-content .name {
+    position: relative;
+    width: 100%;
+}
+
+.intro .intro-content .name b {
+    width: 100%;
+    left: -10px;
+    position: absolute;
+    top: calc(3vw - 6px);
+    background-color: #fff;
+    padding: 4px;
+    text-transform: lowercase;
+    letter-spacing: 6px;
+    font-size: 20px;
+
+}
+
+.intro-content .title{
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    margin-top: -10px;
+    padding-right: 10px;
+}
+
+.intro .intro-links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+}
+
+.intro .intro-links .links-title {
+    margin-right: 40px;
+}
+
+.intro .intro-links .link {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.intro .intro-links .link img {
+    width: 20px;
+    height: 20px;
+}
+
+.intro .intro-links .link a {
+    margin-right: 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #000;
+}
+
+.intro .intro-links .link a:hover {
+    color: #000;
+}
+
+.tag {
+    color: white;
+    background-color: grey;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.iu {
+    background-color: #900;
+}
+
+.line {
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    right: calc(4% + 8.5px);
+}
+
+.white {
+    background-color: #fff;
+    z-index: 99;
+}
+
+.black {
+    background-color: #000;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+}
+
+.content-row {
+    width: 100%;
+    display: flex;
+}
+
+.work {
+    height: 16.67vw;
+    padding: 1vw;
+    display: flex;
+    align-items: end;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work svg {
+    width: 5vw;
+    height: 5vw;
+    max-width: 40px;
+    max-height: 40px;
+    color: #fff;
+    fill: #fff;
+}
+
+.work svg:hover {
+    fill: grey;
+}
+
+.work svg path {
+-webkit-filter: drop-shadow( 20px 20px 20px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 20px 20px 20px rgba(0, 0, 0, .7));
+}
+
+.small {
+    width: 16.67%;
+    background-color: #EEE;
+}
+
+.medium {
+    width: 33.34%;
+    background-color: #EEE;
+}
+
+.large {
+    width: 50%;
+    background-color: #EEE;
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        flex-direction: column;
+    }
+    
+    .intro .intro-content {
+        width: 90%;
+    }
+
+    .content-row {
+        height: fit-content;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .work {
+        height: 25vw;
+    }
+
+    .small {
+        width: 25%;
+    }
+    
+    .medium {
+        width: 50%;
+    }
+    
+    .large {
+        width: 100%;
+    }
+}
