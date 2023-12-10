@@ -46,6 +46,10 @@ p {
     line-height: 1.4em;
 }
 
+a {
+    color: #82F;
+}
+
 @font-face {
     font-family: Pixel;
     src: url(../assets/fonts/nokiafc22.ttf);
