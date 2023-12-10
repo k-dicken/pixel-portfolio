@@ -39,6 +39,7 @@ ul,
 input,
 div
 {
+    color: #381c2e;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -47,7 +48,7 @@ p {
 }
 
 a {
-    color: #82F;
+    color: #e86254;
 }
 
 @font-face {
@@ -93,7 +94,7 @@ a {
     padding: 4px;
     text-transform: lowercase;
     letter-spacing: 6px;
-    font-size: 20px;
+    font-size: 1.5vw;
 
 }
 
@@ -104,6 +105,21 @@ a {
     font-size: 24px;
     margin-top: -10px;
     padding-right: 10px;
+}
+
+.socials {
+    width: 100%;
+}
+
+.socials svg {
+    width: 20px;
+    height: 20px;
+    fill: #926f82;
+    margin-right: 8px;
+}
+
+.socials svg:hover {
+    fill: #e86254;
 }
 
 .intro .intro-links {
@@ -134,16 +150,17 @@ a {
     margin-right: 20px;
     font-size: 1.4em;
     text-decoration: none;
-    color: #000;
+    color: #926f82;
 }
 
 .intro .intro-links .link a:hover {
-    color: #000;
+    color: #926f82;
+    cursor: default;
 }
 
 .tag {
     color: white;
-    background-color: grey;
+    background-color: #926f82;
     padding: 4px 8px;
     border-radius: 20px;
 }
@@ -166,7 +183,7 @@ a {
 }
 
 .black {
-    background-color: #000;
+    background-color: #381c2e;
     z-index: -1;
 }
 
@@ -200,7 +217,7 @@ a {
 }
 
 .work svg:hover {
-    fill: grey;
+    fill: #b293a3;
 }
 
 .work svg path {
@@ -210,17 +227,17 @@ a {
 
 .small {
     width: 16.67%;
-    background-color: #EEE;
+    background-color: #eadbe1;
 }
 
 .medium {
     width: 33.34%;
-    background-color: #EEE;
+    background-color: #eadbe1;
 }
 
 .large {
     width: 50%;
-    background-color: #EEE;
+    background-color: #eadbe1;
 }
 
 @media screen and (max-width: 800px) {
@@ -230,6 +247,13 @@ a {
     
     .intro .intro-content {
         width: 90%;
+    }
+
+    .intro .intro-content .name b {
+    display: none;
+ }
+    .intro .intro-content .name h1 {
+        font-size: 8vw;
     }
 
     .content-row {
