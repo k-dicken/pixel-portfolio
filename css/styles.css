@@ -114,7 +114,7 @@ a {
 .socials svg {
     width: 20px;
     height: 20px;
-    fill: #926f82;
+    fill: #464046;
     margin-right: 8px;
 }
 
@@ -139,6 +139,7 @@ a {
     justify-content: end;
     align-items: center;
     margin: 40px 0;
+    font-weight: 500;
 }
 
 .intro .intro-links .link img {
@@ -146,16 +147,18 @@ a {
     height: 20px;
 }
 
+/* HERE ITS RIGHT HERE */
+
 .intro .intro-links .link a {
     margin-right: 20px;
     font-size: 1.4em;
     text-decoration: none;
-    color: #926f82;
+    color: #464046;
 }
 
 .intro .intro-links .link a:hover {
-    color: #926f82;
-    cursor: default;
+    color: #e86254;
+    text-decoration: underline;
 }
 
 .tag {
@@ -205,6 +208,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 2px white solid;
 }
 
 .work svg {
@@ -217,7 +221,7 @@ a {
 }
 
 .work svg:hover {
-    fill: #b293a3;
+    fill: #acaaac;
 }
 
 .work svg path {
